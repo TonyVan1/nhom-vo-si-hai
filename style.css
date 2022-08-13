@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
 }
 
 .full-background {
@@ -15,14 +14,15 @@ body {
 
 .group-name span:first-child {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 11%;
     animation: floatingGroupName1 5s infinite ease-in-out;
     z-index: 4;
+    box-shadow: 1px 1px 1px 1px;
 }
 
 .group-name span:first-child img {
-    width: 1200px;
+    width: 500px;
 }
 
 @keyframes floatingGroupName1 {
@@ -34,7 +34,7 @@ body {
 
 .group-name span:last-child {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 11%;
     animation: floatingGroupName2 5s infinite ease-in-out;
     cursor: pointer;
@@ -42,7 +42,7 @@ body {
 }
 
 .group-name span:last-child img {
-    width: 1200px;
+    width: 500px;
 }
 
 @keyframes floatingGroupName2 {
@@ -54,14 +54,14 @@ body {
 
 .date {
     position: absolute;
-    top: 86%;
-    left: 30%;
+    top: 84%;
+    left: 25%;
     animation: floatingDate 2s infinite linear;
     z-index: 9;
 }
 
 .date img {
-    width: 600px;
+    width: 300px;
 }
 
 /* Toan */
@@ -80,7 +80,7 @@ body {
 
 @keyframes floatingToan {
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-5px);
     }
 }
 
@@ -104,7 +104,7 @@ body {
 
 @keyframes floatingThanh {
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-5px);
     }
 }
 
@@ -124,7 +124,7 @@ body {
 
 @keyframes floatingLoc {
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-5px);
     }
 }
 
@@ -144,6 +144,6 @@ body {
 
 @keyframes floatingAn {
     40% {
-        transform: translateY(-15px);
+        transform: translateY(-5px);
     }
 }
