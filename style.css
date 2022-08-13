@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.full-background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(.//Img/background.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 2;
+}
+
+.group-name span:first-child {
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    animation: floatingGroupName1 5s infinite ease-in-out;
+    z-index: 4;
+}
+
+.group-name span:first-child img {
+    width: 1200px;
+}
+
+@keyframes floatingGroupName1 {
+    50% {
+        transform: translateY(10px);
+        opacity: 0.8;
+    }
+}
+
+.group-name span:last-child {
+    position: absolute;
+    top: 30%;
+    left: 11%;
+    animation: floatingGroupName2 5s infinite ease-in-out;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.group-name span:last-child img {
+    width: 1200px;
+}
+
+@keyframes floatingGroupName2 {
+    50% {
+        transform: translateY(10px);
+        opacity: 0.8;
+    }
+}
+
+.date {
+    position: absolute;
+    top: 86%;
+    left: 30%;
+    animation: floatingDate 2s infinite linear;
+    z-index: 9;
+}
+
+.date img {
+    width: 600px;
+}
+
+/* Toan */
+.characters span:first-child {
+    position: absolute;
+    top: -5%;
+    left: 40%;
+    animation: floatingToan 2s infinite ease-in-out;
+    z-index: 5;
+}
+
+.characters span:first-child img {
+    width: 45%;
+    cursor: pointer;
+}
+
+@keyframes floatingToan {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.characters span:first-child img:hover {
+    color-scheme: white;
+}
+
+/* Thanh */
+.characters span:nth-child(2) {
+    position: absolute;
+    top: 5%;
+    left: 33%;
+    animation: floatingThanh 3s infinite ease-in-out;
+    z-index: 4;
+}
+
+.characters span:nth-child(2) img {
+    width: 30%;
+    cursor: pointer;
+}
+
+@keyframes floatingThanh {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Loc */
+.characters span:nth-child(3) {
+    position: absolute;
+    top: 35%;
+    left: 48%;
+    animation: floatingLoc 3s infinite ease-out;
+    z-index: 7;
+}
+
+.characters span:nth-child(3) img {
+    width: 40%;
+    cursor: pointer;
+}
+
+@keyframes floatingLoc {
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* An */
+.characters span:last-child {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    animation: floatingAn 2s infinite ease-in;
+    z-index: 6;
+}
+
+.characters span:last-child img {
+    width: 30%;
+    cursor: pointer;
+}
+
+@keyframes floatingAn {
+    40% {
+        transform: translateY(-15px);
+    }
+}
